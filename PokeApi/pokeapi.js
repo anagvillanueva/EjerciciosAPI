@@ -13,7 +13,12 @@ function getPokemonByName(name){
         if(response.statusCode === 200){
             //parse convierte el JSON a objeto JS
             const bodyEnFormatoJs = JSON.parse(body);
-            
+
+            const typePokemon = bodyEnFormatoJs.types.map(
+            (objeto)=> objeto.type.name)
+            console.log(`El tipo ${name} es ${typePokemon}`)
+        }else{
+            console.log(`Ocurrio un error ${response.statusCode} ${response.statusMessage}`)
         }
     });
 
@@ -22,3 +27,4 @@ function getPokemonByName(name){
 
 
 }
+

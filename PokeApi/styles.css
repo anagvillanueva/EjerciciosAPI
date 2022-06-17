@@ -1,0 +1,20 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    /*El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.buscador{
+    margin:20px;
+    text-align: center;
+}
+
+#img-pokemon{
+   height:150px;
+}
