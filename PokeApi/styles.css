@@ -5,16 +5,61 @@
     /*El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
 }
 
+body{
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+
+}
+
 header{
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .buscador{
     margin:20px;
     text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.buscador input{
+    border-radius: 14px;
 }
 
 #img-pokemon{
    height:150px;
 }
+
+.card {
+    box-shadow: 0 8px 8px 0 rgba(251, 216, 62, 0.2);
+    width: 12%;
+    margin: 0 auto;
+    border-radius:13px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-body-tittle{
+    text-align: center;
+    padding:12px;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+#pokeimg {
+    height: 250px;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#nomPokemon{
+    font-size:30px;
+}
+
+
